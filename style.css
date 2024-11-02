@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #7134eb;
+  --secondary-color: #a8a8a8;
+  --background-color: #e7e7e7;
+  --text-color: rgb(59, 59, 59);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  flex: 1 0 auto;
+}
+
+.metro-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  border-radius: 5px;
+  padding: 0.75rem 1.25rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 20px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2f1563;
+  transform: translateY(-2px);
+}
+
+.result-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+#route {
+  border-radius: 10px;
+}
+
+footer {
+  /* background-color: var(--secondary-color); */
+  color: #7134eb;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-weight: bold;
+  border-top: 1px dotted black;
+}
+
+@media (max-width: 768px) {
+  .metro-card {
+    padding: 1.5rem;
+  }
+}
